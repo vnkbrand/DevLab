@@ -44,3 +44,7 @@ img {
   width: 100px;
   flex: 1;
 }
+
+.btn-db {
+  width: 130px;
+}

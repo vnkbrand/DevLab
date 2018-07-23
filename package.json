@@ -8,7 +8,8 @@
     "test": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "format": "prettier-eslint \"src/**/*.js\""
   },
   "author": "Brandon",
   "license": "ISC",
@@ -25,6 +26,8 @@
     "validator": "^10.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
