@@ -41,7 +41,7 @@ img {
 
 .btn {
   padding: 10px 30px auto;
-  width: 100px;
+  width: auto;
   flex: 1;
 }
 
