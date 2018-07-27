@@ -20,7 +20,10 @@ class Navbar extends Component {
 
       //  Links if a user is logged in
     const authLinks = (
-      <ul className="navbar-nav ml-auto">
+    <ul className="navbar-nav ml-auto">
+      <li className="nav-item">
+        <Link className="nav-link nav-db" style={{ color: '#5bc0de' }} to="/dashboard">Dashboard</Link>
+      </li>
       <li className="nav-item">
         <a href="" onClick={this.onLogoutClick.bind(this)} className="nav-link">
         <img 
