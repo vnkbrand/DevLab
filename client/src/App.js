@@ -22,6 +22,8 @@ import AddExperience from './components/add-credentials/AddExperience';
 import AddEducation from './components/add-credentials/AddEducation';
 import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
+import NotFound from './components/not-found/NotFound';
+
 
 
 
@@ -87,6 +89,8 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/add-education" component={AddEducation} />
             </Switch>
+
+            <Route exact path="/not-found" component={NotFound} />
 
           </div>
         <Footer />
