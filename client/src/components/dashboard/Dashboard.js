@@ -41,7 +41,7 @@ onDeleteClick(e) {
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
 
-            <div style={{ marginBottom: '60px'}} />
+            <div style={{ marginBottom: '50px'}} />
               <button onClick={this.onDeleteClick.bind(this)} className="btn btn-danger">
               Delete My Account
               </button>
