@@ -37,7 +37,7 @@ app.use("/api/profile", profile);
 //  This is for deployment to heroku - we will check for production, set the static folder to client build and for any route that gets hit here - we will load react index.html file
 
 //  Server static assets if in production
-if(process.env.NODE_ENV == 'prdouction') {
+if(process.env.NODE_ENV == 'production') {
   //  Set a static folder
   app.use(express.static('client/build'));
 
