@@ -37,12 +37,12 @@ app.use('/api/posts', posts);
 // Server static assets if in Production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
-  <a href="https://app.use" rel="nofollow" target="_blank">app.use</a>(express.static("client/build"));
-  <a href="https://app.get" rel="nofollow" target="_blank">app.get</a>("*", (req, res) => {
-  <a href="https://res.sendFile" rel="nofollow" target="_blank">res.sendFile</a>(path.resolve(__dirname, "client", "build", "index.html"));
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
  }
-
+ 
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
