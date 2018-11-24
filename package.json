@@ -9,8 +9,8 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "start": "node server.js"
   },
   "author": "Brandon",
   "license": "ISC",
@@ -30,5 +30,18 @@
     "nodemon": "^1.17.5",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnkbrand/devconnector.git"
+  },
+  "keywords": [
+    "Platofrm",
+    "for",
+    "developers"
+  ],
+  "bugs": {
+    "url": "https://github.com/vnkbrand/devconnector/issues"
+  },
+  "homepage": "https://github.com/vnkbrand/devconnector#readme"
 }
